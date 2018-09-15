@@ -61,7 +61,7 @@ def main():
         print "Usage: ./cybrary-video-downloader.py <270/360/720> \"<course link>\""
         print "Example: ./cybrary-video-downloader.py 360 \"https://www.cybrary.it/course/ethical-hacking/\""
     else:
-        username = raw_input("Username: ")
+        username = input("Username: ")
         passwd = getpass.getpass()
         login(username, passwd)
         getLessonList(sys.argv[2], sys.argv[1])
